@@ -55,16 +55,16 @@ register_rest_route(LARA_CONNECTOR_NAMESPACE, '/paddlewebhooks/task', array(
 
 function paddlewebhooks_task_action(\WP_REST_Request $request) {
 
-// Your Paddle 'Public Key'
+// Your Paddle 'Public Key' Example
   $public_key_string =
 "-----BEGIN PUBLIC KEY-----" . "\n" .
 "MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEArgxnuC+6pyfQHBXDBbEm" . "\n" .
-"ZObmsyVcgH08M7h9mg/m3bMPq0/9bUksOsfh0fQpeKH+bwMsScvQH5QWIpUjVKE+" . "\n" .
 "RFeKLPJZsnbBxY6e+5WYrJjt1heM3qMWqXgAXaL00ZRIuBkkZVN0y672OhaoumiO" . "\n" .
-"jaIkTjJQ5+lZ0XVvASZ4esvi7RGA4RIU3sqlqe4bRpVAmmdpME4TvmYvOpNwJnII" . "\n" .
 "AoHB4V3DXDWe6ex31HNrEREMlqaMoFvDhe8QpzELbYIoNxX/R9aWZdJzWeKWT8+e" . "\n" .
+"jaIkTjJQ5+lZ0XVvASZ4esvi7RGA4RIU3sqlqe4bRpVAmmdpME4TvmYvOpNwJnII" . "\n" .
 "fD+si/Wy81CtRL13gvaG+Fcd22imzGJf429jV0RVr3iUKYeMplpHdBqo/wW2jkhm" . "\n" .
 "xtKbNE2KOmrXUBR8kXa1TYN35MQhCiYKMhuOFrN0Qv3ckx0EkcCK5yHDU2BL33hr" . "\n" .
+"ZObmsyVcgH08M7h9mg/m3bMPq0/9bUksOsfh0fQpeKH+bwMsScvQH5QWIpUjVKE+" . "\n" .
 "E0fTZPgM6xGJZxaQJdDGiUFcmMrANugi4RXP5USyRSiT5D2fCQ2obLqnK75c+STI" . "\n" .
 "iYcb1iJI5XiLvBbCRFx8Up7mQqg3++M8IXH++xzg5cNP8fpGKDDqeRdeK5LIiOMn" . "\n" .
 "pi7DL5WDS++0TmuQEcKL8qqMSA0Aq7YC56A4iyp8vlmDm0gZ+Y/VhDdeoveqBx5i" . "\n" .

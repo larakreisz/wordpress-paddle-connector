@@ -29,6 +29,17 @@ if (!defined('WPINC'))
  */
 
 
+// 1. Enqueue Paddle Checkout
+ 
+ add_action( 'wp_enqueue_scripts', 'enqueue_paddle_scripts' );
+ function enqueue_paddle_scripts() {
+    wp_register_script( 'paddle-js', 'https://cdn.paddle.com/paddle/paddle.js', null, null, true );
+    wp_enqueue_script( 'paddle-js' );
+ }
+ 
+
+
+ // 2. Connect Paddle and WordPress
 define('LARA_CONNECTOR_NAMESPACE', "lara-connector/v1");
 
 add_action('rest_api_init', 'register_routes');

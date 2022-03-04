@@ -115,6 +115,19 @@ $signature = base64_decode($_POST['p_signature']);
   // Verify the signature
   $verification = openssl_verify($data, $signature, $public_key, OPENSSL_ALGO_SHA1);
   
+     // log $verification value !!!
+  write_log($verification);
+
+
+  
+
+  
+
+	
+	
+	
+/* ---------------------------------------------------------------------------------------------------------
+//custom code
 
 
   $test = "Ausgangspunkt";
@@ -123,11 +136,8 @@ $signature = base64_decode($_POST['p_signature']);
   } else {	  
 	  $test = 'verification NOT success';
   }	
-	
-	
-	
-/* ---------------------------------------------------------------------------------------------------------
-//custom code
+
+
 
 $data = $_POST;
 $passthrough = json_decode(stripslashes($data['passthrough']), true);

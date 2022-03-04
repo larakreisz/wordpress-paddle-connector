@@ -1,4 +1,35 @@
+// debug log without the passthrough -- ONE-TIME-PAYMENT
+// it logs $data and $verification ---- see set up here: https://github.com/larakreisz/wordpress-paddle-connector/blob/main/paddle-wordpress
+
 [04-Mar-2022 10:09:56 UTC] a:15:{s:10:"event_time";s:19:"2022-03-04 10:09:55";s:9:"p_country";s:2:"DE";s:8:"p_coupon";s:8:"TEST2021";s:16:"p_coupon_savings";s:4:"1.90";s:10:"p_currency";s:3:"EUR";s:10:"p_earnings";s:23:"{\"132507\":\"0.0000\"}";s:10:"p_order_id";s:8:"34424947";s:12:"p_paddle_fee";s:4:"0.00";s:7:"p_price";s:4:"0.00";s:12:"p_product_id";s:6:"742978";s:10:"p_quantity";s:1:"1";s:12:"p_sale_gross";s:4:"0.00";s:12:"p_tax_amount";s:4:"0.00";s:21:"p_used_price_override";s:1:"0";s:8:"quantity";s:1:"1";}
 [04-Mar-2022 10:09:56 UTC] 0
 [04-Mar-2022 10:09:56 UTC] a:28:{s:8:"alert_id";s:8:"92497799";s:10:"alert_name";s:17:"payment_succeeded";s:16:"balance_currency";s:3:"EUR";s:16:"balance_earnings";s:1:"0";s:11:"balance_fee";s:1:"0";s:13:"balance_gross";s:1:"0";s:11:"balance_tax";s:1:"0";s:11:"checkout_id";s:36:"137008180-chre7b5a8b21354-9e216500ef";s:7:"country";s:2:"DE";s:6:"coupon";s:8:"TEST2021";s:8:"currency";s:3:"EUR";s:13:"customer_name";s:11:"Lara Kreisz";s:8:"earnings";s:1:"0";s:5:"email";s:18:"lara.kreisz@gmx.de";s:10:"event_time";s:19:"2022-03-04 10:09:55";s:3:"fee";s:1:"0";s:2:"ip";s:0:"";s:17:"marketing_consent";s:1:"0";s:8:"order_id";s:8:"34424947";s:11:"passthrough";s:0:"";s:14:"payment_method";s:4:"free";s:11:"payment_tax";s:1:"0";s:10:"product_id";s:6:"742978";s:12:"product_name";s:13:"VERANSTALTUNG";s:8:"quantity";s:1:"1";s:11:"receipt_url";s:74:"http://my.paddle.com/receipt/34424947/137008180-chre7b5a8b21354-9e216500ef";s:10:"sale_gross";s:1:"0";s:19:"used_price_override";s:1:"0";}
 [04-Mar-2022 10:09:56 UTC] 1
+
+
+
+// debug log with the passthrough -- ONE-TIME-PAYMENT
+// it logs $data and $verification ---- see set up here: https://github.com/larakreisz/wordpress-paddle-connector/blob/main/paddle-wordpress
+
+[04-Mar-2022 10:48:50 UTC] a:16:{s:10:"event_time";s:19:"2022-03-04 10:48:48";s:9:"p_country";s:2:"DE";s:8:"p_coupon";s:8:"TEST2021";s:16:"p_coupon_savings";s:4:"1.90";s:10:"p_currency";s:3:"EUR";s:10:"p_earnings";s:23:"{\"132507\":\"0.0000\"}";s:10:"p_order_id";s:8:"34425883";s:12:"p_paddle_fee";s:4:"0.00";s:7:"p_price";s:4:"0.00";s:12:"p_product_id";s:6:"742978";s:10:"p_quantity";s:1:"1";s:12:"p_sale_gross";s:4:"0.00";s:12:"p_tax_amount";s:4:"0.00";s:21:"p_used_price_override";s:1:"0";s:11:"passthrough";s:131:"{\"reitanlage\": \" Reitanlage Birkenhof // id: 44797 \", \"veranstaltung\": \" 57430 \", \"art\": \"PREMIUM-EVENT-EINMALZAHLUNG\"}";s:8:"quantity";s:1:"1";}
+[04-Mar-2022 10:48:50 UTC] 0
+[04-Mar-2022 10:48:50 UTC] a:28:{s:8:"alert_id";s:8:"92500049";s:10:"alert_name";s:17:"payment_succeeded";s:16:"balance_currency";s:3:"EUR";s:16:"balance_earnings";s:1:"0";s:11:"balance_fee";s:1:"0";s:13:"balance_gross";s:1:"0";s:11:"balance_tax";s:1:"0";s:11:"checkout_id";s:36:"137013404-chrea3decf1ce7e-b7eacc3fb8";s:7:"country";s:2:"DE";s:6:"coupon";s:8:"TEST2021";s:8:"currency";s:3:"EUR";s:13:"customer_name";s:11:"Lara Kreisz";s:8:"earnings";s:1:"0";s:5:"email";s:18:"lara.kreisz@gmx.de";s:10:"event_time";s:19:"2022-03-04 10:48:48";s:3:"fee";s:1:"0";s:2:"ip";s:0:"";s:17:"marketing_consent";s:1:"0";s:8:"order_id";s:8:"34425883";s:11:"passthrough";s:131:"{\"reitanlage\": \" Reitanlage Birkenhof // id: 44797 \", \"veranstaltung\": \" 57430 \", \"art\": \"PREMIUM-EVENT-EINMALZAHLUNG\"}";s:14:"payment_method";s:4:"free";s:11:"payment_tax";s:1:"0";s:10:"product_id";s:6:"742978";s:12:"product_name";s:13:"VERANSTALTUNG";s:8:"quantity";s:1:"1";s:11:"receipt_url";s:74:"http://my.paddle.com/receipt/34425883/137013404-chrea3decf1ce7e-b7eacc3fb8";s:10:"sale_gross";s:1:"0";s:19:"used_price_override";s:1:"0";}
+[04-Mar-2022 10:48:50 UTC] 0
+
+
+
+
+
+
+// debug log without the passthrough -- SUBSCRIPTION
+// it logs $data and $verification ---- see set up here: https://github.com/larakreisz/wordpress-paddle-connector/blob/main/paddle-wordpress
+[04-Mar-2022 10:55:37 UTC] a:19:{s:8:"alert_id";s:8:"92500456";s:10:"alert_name";s:20:"subscription_created";s:10:"cancel_url";s:141:"https://subscription-management.paddle.com/subscription/11901268/hash/c37fc94146e8693678c84255b38d0ddc40446cc47346f0f5eadb8bf46f74a4d0/cancel";s:11:"checkout_id";s:36:"137014270-chre45d5dbab509-e9e5a3a75d";s:8:"currency";s:3:"EUR";s:5:"email";s:18:"lara.kreisz@gmx.de";s:10:"event_time";s:19:"2022-03-04 10:55:35";s:20:"linked_subscriptions";s:0:"";s:17:"marketing_consent";s:1:"0";s:14:"next_bill_date";s:10:"2022-04-04";s:11:"passthrough";s:0:"";s:8:"quantity";s:1:"1";s:6:"source";s:17:"test.cuteberry.de";s:6:"status";s:6:"active";s:15:"subscription_id";s:8:"11901268";s:20:"subscription_plan_id";s:6:"742031";s:10:"unit_price";s:4:"0.63";s:10:"update_url";s:141:"https://subscription-management.paddle.com/subscription/11901268/hash/c37fc94146e8693678c84255b38d0ddc40446cc47346f0f5eadb8bf46f74a4d0/update";s:7:"user_id";s:8:"36950682";}
+[04-Mar-2022 10:55:37 UTC] 1
+
+
+
+// debug log with the passthrough -- SUBSCRIPTION
+// it logs $data and $verification ---- see set up here: https://github.com/larakreisz/wordpress-paddle-connector/blob/main/paddle-wordpress
+
+[04-Mar-2022 10:53:03 UTC] a:19:{s:8:"alert_id";s:8:"92500311";s:10:"alert_name";s:20:"subscription_created";s:10:"cancel_url";s:141:"https://subscription-management.paddle.com/subscription/11901238/hash/c0cfe31cc5d5aae4ff0d892fa1da64c1cdb21fb2929769195bb1ecc52e981bec/cancel";s:11:"checkout_id";s:36:"137013894-chref50626d27ef-f5a7f5d7e6";s:8:"currency";s:3:"EUR";s:5:"email";s:18:"lara.kreisz@gmx.de";s:10:"event_time";s:19:"2022-03-04 10:53:01";s:20:"linked_subscriptions";s:0:"";s:17:"marketing_consent";s:1:"0";s:14:"next_bill_date";s:10:"2022-04-04";s:11:"passthrough";s:128:"{\"reitanlage\": \" Reitanlage Birkenhof // id: 44797 \", \"veranstaltung\": \" 57431 \", \"art\": \"PREMIUM-EVENT-ABONNEMENT\"}";s:8:"quantity";s:1:"1";s:6:"source";s:17:"test.cuteberry.de";s:6:"status";s:6:"active";s:15:"subscription_id";s:8:"11901238";s:20:"subscription_plan_id";s:6:"742031";s:10:"unit_price";s:4:"0.63";s:10:"update_url";s:141:"https://subscription-management.paddle.com/subscription/11901238/hash/c0cfe31cc5d5aae4ff0d892fa1da64c1cdb21fb2929769195bb1ecc52e981bec/update";s:7:"user_id";s:8:"36950682";}
+[04-Mar-2022 10:53:03 UTC] 0

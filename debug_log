@@ -1,3 +1,47 @@
+// debug log for updated javascript:
+
+[14-Mar-2022 23:20:14 UTC] a:16:{s:10:"event_time";s:19:"2022-03-14 23:20:13";s:9:"p_country";s:2:"DE";s:8:"p_coupon";s:8:"TEST2021";s:16:"p_coupon_savings";s:4:"2.90";s:10:"p_currency";s:3:"EUR";s:10:"p_earnings";s:23:"{\"132507\":\"0.0000\"}";s:10:"p_order_id";s:8:"34804809";s:12:"p_paddle_fee";s:4:"0.00";s:7:"p_price";s:4:"0.00";s:12:"p_product_id";s:6:"742978";s:10:"p_quantity";s:1:"1";s:12:"p_sale_gross";s:4:"0.00";s:12:"p_tax_amount";s:4:"0.00";s:21:"p_used_price_override";s:1:"0";s:11:"passthrough";s:131:"{\'reitanlage\': \' Reitanlage Birkenhof // id: 44797 \', \'veranstaltung\': \' 57516 \', \'art\': \'PREMIUM-EVENT-EINMALZAHLUNG\'}";s:8:"quantity";s:1:"1";}
+[14-Mar-2022 23:20:14 UTC] 0
+[14-Mar-2022 23:20:14 UTC] a:28:{s:8:"alert_id";s:8:"94062106";s:10:"alert_name";s:17:"payment_succeeded";s:16:"balance_currency";s:3:"EUR";s:16:"balance_earnings";s:1:"0";s:11:"balance_fee";s:1:"0";s:13:"balance_gross";s:1:"0";s:11:"balance_tax";s:1:"0";s:11:"checkout_id";s:36:"139122335-chrec0b163c63ca-9d92698b42";s:7:"country";s:2:"DE";s:6:"coupon";s:8:"TEST2021";s:8:"currency";s:3:"EUR";s:13:"customer_name";s:11:"Lara Kreisz";s:8:"earnings";s:1:"0";s:5:"email";s:18:"lara.kreisz@gmx.de";s:10:"event_time";s:19:"2022-03-14 23:20:13";s:3:"fee";s:1:"0";s:2:"ip";s:0:"";s:17:"marketing_consent";s:1:"0";s:8:"order_id";s:8:"34804809";s:11:"passthrough";s:131:"{\'reitanlage\': \' Reitanlage Birkenhof // id: 44797 \', \'veranstaltung\': \' 57516 \', \'art\': \'PREMIUM-EVENT-EINMALZAHLUNG\'}";s:14:"payment_method";s:4:"free";s:11:"payment_tax";s:1:"0";s:10:"product_id";s:6:"742978";s:12:"product_name";s:13:"Premium Event";s:8:"quantity";s:1:"1";s:11:"receipt_url";s:74:"http://my.paddle.com/receipt/34804809/139122335-chrec0b163c63ca-9d92698b42";s:10:"sale_gross";s:1:"0";s:19:"used_price_override";s:1:"0";}
+[14-Mar-2022 23:20:14 UTC] 0
+
+
+/* ------- Updated JavaScript:
+
+Paddle.Checkout.open({
+			method: 'inline',
+			product: 742978,  
+            email: form.useremail.value,
+            country: form.country.value,
+            postcode: form.postcode.value,
+            passthrough: '{\'reitanlage\': \''+form.reitanlage.value+'\', \'veranstaltung\': \''+form.veranstaltung.value+'\', \'art\': \'PREMIUM-EVENT-EINMALZAHLUNG\'}', 
+			allowQuantity: false,
+			disableLogout: true,
+            success: 'https://test.cuteberry.de/paddle-test-page', 
+            frameTarget: 'checkout-container',
+			frameInitialHeight: 416,
+			frameStyle: 'width:100%; min-width:312px; background-color: transparent; border: none;'     
+		});
+    
+    ---------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // debug log without the passthrough -- ONE-TIME-PAYMENT
 // it logs $data and $verification ---- see set up here: https://github.com/larakreisz/wordpress-paddle-connector/blob/main/paddle-wordpress
 
